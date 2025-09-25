@@ -1,0 +1,19 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: 2px solid black;
+}
+
+.one{
+    background-color: aquamarine;
+}
+
+.two{
+    background-color: darksalmon;
+    position: relative;
+    bottom: 50px;
+    z-index: -1;
+}
+
+/* z-index works only on positioned elements (relative, absolute, fixed, sticky) */
