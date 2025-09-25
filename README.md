@@ -19,6 +19,15 @@ Includes mini projects, a full-stack app, and practice materials to reinforce le
     - [Part B](html/level-1/part-b)
   - [Level 2](html/level-2)
   - [Level 3](html/level-3)
+- **CSS**
+  - [Part 1](css/part-1)
+  - [Part 2](css/part-2)
+  - [Part 3](css/part-3)
+  - [Part 4](css/part-4)
+  - [Part 5](css/part-5)
+  - [Part 6](css/part-6)
+  - [Mini Project](css/mini-project)
+  - [Project](css/project)
 
 ## License
 Licensed under the [MIT License](./LICENSE).
