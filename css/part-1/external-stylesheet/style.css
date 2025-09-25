@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    color:blue;
+    background-color: black;
+    text-decoration: wavy white underline;
+    letter-spacing: 5px;
+}
+
+h2 {
+    color:blue;
+    background-color: black;
+    font-weight: 200;
+    text-decoration: overline;
+    text-decoration-color: brown;
+}
+
+p {
+    color: green;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    background-color: yellow;
+}
+
+a{
+    text-decoration: none;
+}
