@@ -1,0 +1,29 @@
+h2 {
+    display: inline;
+    background-color: blanchedalmond;
+}
+
+span {
+    /* display: block; */
+    /* background-color: blanchedalmond; */
+    height: 100px; /* browser ignores */
+    width: 200px; /* browser ignores */
+    padding: 20px; /* only left and right */
+    margin: 20px; /* only left and right */
+    border: 2px solid black;
+}
+
+div {
+        height: 100px; /* browser ignores */
+        width: 200px; /* browser ignores */
+        padding: 20px; /* only left and right */
+        margin: 20px; /* only left and right */
+        border: 2px solid black;
+}
+
+.div {
+    display: inline-block;
+    background-color: aqua;
+    margin-top: 50px;
+    margin: 5px;
+}
