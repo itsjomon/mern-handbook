@@ -28,6 +28,12 @@ Includes mini projects, a full-stack app, and practice materials to reinforce le
   - [Part 6](css/part-6)
   - [Mini Project](css/mini-project)
   - [Project](css/project)
+- [Bootstrap](bootstrap)
+- **JavaScript**
+  - [Part 1](javscript/part-1)
+  - [Part 2](javascript/part-2)
+- [Terminal](terminal)
+- [Git and GitHub](git-and-github)
 
 ## License
 Licensed under the [MIT License](./LICENSE).
