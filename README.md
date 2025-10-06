@@ -33,6 +33,7 @@ Includes mini projects, a full-stack app, and practice materials to reinforce le
   - [Part 1](javscript/part-1)
   - [Part 2](javascript/part-2)
   - [Part 3](javascript/part-3)
+  - [Part 4](javascript/part-4)
 - [Terminal](terminal)
 - [Git and GitHub](git-and-github)
 
