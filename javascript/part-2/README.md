@@ -44,9 +44,9 @@ console.log(`Your pay ${a + b} rupees`);
     - `==`, `!=` compares value, not type
     - `===`, `!==` compares value & type
 
-    <img src="./assets/value-and-type.png" alt="Value and Type" height="300px" width="400px">
-
-    <img src="./assets/comparison-for-non-numbers.png" alt="Comparison for Non-numbers" height="300px" width="400px">
+        <img src="./assets/value-and-type.png" alt="Value and Type" height="300px" width="400px"><br>
+    - Comparison for non numbers<br>
+        <img src="./assets/comparison-for-non-numbers.png" alt="Comparison for Non-numbers" height="300px" width="400px">
 
 - **Logical Operators** <br>
     Logical operators are used to combine boolean expressions.
