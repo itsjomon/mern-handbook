@@ -6,37 +6,42 @@ This is not a full course or production-ready code, but a comprehensive referenc
 ## Table of Contents
 > ✨ This section will continue to grow as more topics are added:
 
-- **HTML**
-  - Level 1
+- [HTML](html)
+  - [Level 1](html/level-1/)
     - [Part A](html/level-1/part-a)
     - [Part B](html/level-1/part-b)
   - [Level 2](html/level-2)
   - [Level 3](html/level-3)
 
-- **CSS**
+- [CSS](css)
   - [Part 1](css/part-1)
   - [Part 2](css/part-2)
   - [Part 3](css/part-3)
   - [Part 4](css/part-4)
   - [Part 5](css/part-5)
   - [Part 6](css/part-6)
-  - [Mini Project - Navbar](css/mini-project)
-  - [Project - Spotify Clone](css/project)
+  - [Mini Project (Navbar)](css/mini-project)
+  - [Project (Spotify Clone)](css/project)
 
 - [Bootstrap](bootstrap)
 
-- **JavaScript**
-  - [Part 1](javscript/part-1)
+- [JavaScript](javascript)
+  - [Part 1](javascript/part-1)
   - [Part 2](javascript/part-2)
   - [Part 3](javascript/part-3)
   - [Part 4](javascript/part-4)
   - [Part 5](javascript/part-5)
-  - **Mini Projects**
+  
+  - [Mini Projects](/javascript/mini-projects)
     - [Calculator](javascript/mini-projects/calculator)
     - [Digital Clock](javascript/mini-projects/digital-clock)
 
 - [Terminal](terminal)
 - [Git and GitHub](git-and-github)
+
+## Related Repositories
+- [30 Days of JS](https://github.com/itsjomon/30-days-of-javascript)
+- [SQL 50](https://github.com/itsjomon/sql-50)
 
 ## License
 Licensed under the [MIT License](./LICENSE).
