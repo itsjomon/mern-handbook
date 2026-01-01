@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Input element is used to create multiple form controls.
+     There are multiple types of inputs that can be created using type attribute. -->
+
+    <form action="/action.php">
+        username:
+        <input type="text">
+        <br><br>
+        password:
+        <input type="password">
+        <br><br>
+        number:
+        <input type="number">
+        <br><br>
+        time:
+        <input type="time">
+        <br><br>
+        color:
+        <input type="color">
+    </form>
+
+    <hr>
+
+    <!-- checkbox -->
+    <form action="/server">
+        <input type="checkbox" id="age" name="age" checked> <!-- checked for defualt tickmark -->
+        <label for="age">I Am 18+</label>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <!-- radio button -->
+    <form action="/server">
+        <div>
+            <input type="radio" name="fruit" id="apple" value="apple">
+            <label for="apple">apple</label>
+
+            <input type="radio" name="fruit" id="mango" value="mango">
+            <label for="mango">mango</label>
+
+            <input type="radio" name="fruit" id="banana" value="banana">
+            <label for="banana">banana</label>
+        </div>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <!-- drop down / select element -->
+    <form action="/server">
+        <div>
+            Choose your profession
+            <select name="profession" id="profession">
+                <option value="std" selected>Student</option> <!-- selected for defualt select -->
+
+                <option value="dev">Developer</option>
+            </select>
+        </div>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <!-- range -->
+    <form action="/server">
+        <div>
+            <label for="vol">Select volume level:</label>
+            <input type="range" min="0%" max="100%" id="vol" name="vol" step="10">
+            <button>Submit</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <!-- textarea -->
+    <form action="/server">
+        <div>
+            <label for="feedback">Please give your valuable feedback:</label>
+            <br>
+            <textarea id="feedback" name="feedback" rows="10" cols="50" placeholder="write your feedback"></textarea>
+            <br>
+            <button>Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
+
