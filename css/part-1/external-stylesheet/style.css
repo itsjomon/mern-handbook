@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    color:rgb(255, 255, 255);
+    background-color: blue;
+    text-decoration: wavy rgb(255, 1, 187) underline;
+    letter-spacing: 5px;
+    line-height: 2.5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    color: white;
+    background-color: rgb(0, 0, 255);
+    font-weight: 600;
+    text-decoration: overline;
+    text-decoration-color: rgb(255, 1, 187);
+    line-height: 2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    color: gray;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    background-color: rgb(0, 123, 255);
+    color: #ffffff;
+     font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    text-decoration: none;
+}
