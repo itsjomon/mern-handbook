@@ -1,0 +1,22 @@
+div {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.645);
+}
+
+/* form {
+    background-color: rgba(0, 0, 0);
+} */
+
+input {
+    background-color: inherit;
+}
+
+button {
+    background-color: inherit;
+    color: white;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
