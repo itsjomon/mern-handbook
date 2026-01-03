@@ -1,0 +1,38 @@
+div {
+    height: 200px;
+    width: 500px;
+    background-color: blanchedalmond;
+    /* border-width: 2px;
+    border-style: dotted;
+    border-color: brown; */
+
+    border: 2px dotted brown;
+    /* border-left-color: blue;
+    border-left-style: dashed;
+    border-top: 2px dashed black; */
+    /* border-radius: 10px; */
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+    padding-top: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+h1 {
+    font-style: italic;
+    text-decoration: underline;
+    margin: 0 0 0 30px;
+}
+
+button {
+    text-align: center;
+    background-color: brown;
+    /* padding: 5px; */
+    /* padding: 1px 2px 3px 4px; */
+    padding: 5px 100px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-left: 30px;
+}
