@@ -15,6 +15,11 @@ This is not a full course or production-ready code, but a comprehensive referenc
 - [CSS](css)
   - [Part 1 - Getting Started](css/part-1)
   - [Part 2](css/part-2)
+  - [Part 3](css/part-3)
+  - [Part 4](css/part-4)
+  - [Part 5](css/part-5)
+  - [Part 6](css/part-6)
+
 ## License
 Licensed under the [MIT License](./LICENSE).
 
