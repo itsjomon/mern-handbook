@@ -1,0 +1,142 @@
+/* alpha channel and opacity */
+#alpha {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(56, 119, 228, 0.5);
+}
+#opacity {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    opacity: 0.5;
+}
+
+/* transform and transition */
+#transition {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(56, 119, 228);
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: margin-top 2s ease-in 0.2s;
+}
+#transition:hover {
+    background-color: rgb(13, 47, 104);
+    margin-top: 300px;
+}
+
+section{
+    margin-top: 100px;
+}
+
+.transform {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin: 10px auto;
+}
+
+.transform:nth-of-type(2n) {
+    background-color: #f7db6a;
+}
+
+.transform:nth-of-type(3n) {
+    background-color: #ebb02d;
+}
+
+#one {
+    transform: rotate(20deg);
+}
+
+#two {
+    transform: scale(1.5);
+    /* transform: scale(2, 1); */
+}
+
+#three {
+    transform: translate(50px, 20px);
+}
+
+#four {
+    transform: skew(20deg, 10deg);
+}
+
+#five {
+    transform: rotate(20deg) skew(10deg, 5deg);
+}
+
+/* box shodow */
+#shadow {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(130, 176, 255);
+    box-shadow: 2px 4px 5px grey;
+}
+
+/* background image */
+#bg {
+    height: 300px;
+    width: 500px;
+    background-image: url("bg-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+#bg p{
+    font-size: 100px;
+}
+
+/* card hover effect */
+.card {
+    height: 300px;
+    width: 300px;
+    border: 2px solid grey;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px grey;
+    transition: all 0.5s ease-in-out;
+}
+.card img{
+    width: 100%;
+    height: 150px;
+    border-radius: 13px 13px 0 0;
+}
+.disc{
+    padding: 0 10px 0 10px;
+}
+.card:hover {
+    box-shadow: 5px 5px 15px grey;
+    transform: translateY(-10px);
+}
+
+/* Position property */
+.position{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(140, 255, 130);
+    text-align: center;
+    border: 2px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+#static{
+    position: static;
+}
+#relative{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+#absolute{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+#fixed{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}

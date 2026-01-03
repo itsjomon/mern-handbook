@@ -1,0 +1,40 @@
+#box1 {
+  width: 100px;
+  height: 100px;
+  background: green;
+  transition: ease-in 2s 0.5s; /* Ans 1 */
+}
+
+#box1:hover {
+  width: 600px;
+}
+
+#box2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transform: translate(200px, 200px) rotate(90deg); /* Ans 2 */
+}
+
+#box3 {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  transform: skewX(20deg); /* Ans 3 */
+}
+
+#box4 {
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  box-shadow: 2px 2px 5px green; /* Ans 4 */
+}
+
+#myPic {
+  width: 200px;
+  height: 200px;
+  background: pink;
+  background-image: url("https://www.w3schools.com/w3images/lights.jpg"); /* Ans 5 */
+  background-size: cover; /* Ans 5 */
+  opacity: 50%; /* Ans 5 */
+}
