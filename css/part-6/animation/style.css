@@ -1,0 +1,59 @@
+.box{
+    width: 300px;
+    height: 100px;
+    background-color: pink;
+
+    /* animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+
+    animation: Animate 3s ease-in 0s infinite alternate;
+}
+
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    background-color: rgb(93, 0, 255);
+}
+
+/* @keyframes fontAnimation{
+    form {font-size: 20px;}
+    to {font-size: 50px;}
+} */
+
+@keyframes Animate{
+    0% {
+        transform: scale(0.6);
+        background-color: lightblue;
+    }
+    50% {
+        transform: scale(0.8);
+        background-color: lightgreen;
+    }
+    100% {
+        transform: scale(1);
+        background-color: pink;
+    }
+}
+
+@media (max-width: 800px){
+    h1{
+        background-color: orchid;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 700px){
+    h1{
+        background-color: lightcoral;
+    }
+}
+
+@media(orientation: landscape){
+    h1{
+        background-color: lightseagreen;
+    }
+}
