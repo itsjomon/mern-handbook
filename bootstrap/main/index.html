@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Bootstrap
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                   </form>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- container -->
+    <div class="container">
+        <h2>Bootstrap Demo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est praesentium doloribus adipisci aliquid quam natus consequatur iure facilis deserunt fugiat totam, fuga ducimus omnis reiciendis, vero quos alias debitis ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat accusamus aperiam excepturi id eligendi error? Perspiciatis molestias iste alias, sit nisi sapiente, optio accusantium blanditiis, voluptatem facere at pariatur.</p>
+
+        <!-- buttons -->
+         <h2>Buttons</h2>
+        <button class="btn btn-primary">btn one</button>
+        <button class="btn btn-secondary">btn two</button>
+        <button class="btn btn-outline-danger">btn three</button>
+        <button class="btn btn-success">btn four </button>
+        <button class="btn btn-warning">btn five</button>
+        <hr>
+
+        <!-- badges -->
+        <h2>Badges</h2>
+        <h4>notifications <span class="badge bg-primary">new</span></h4>
+        <br>
+        <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+        <hr>
+
+        <!-- alert -->
+        <h2>Alert</h2>
+        <div class="alert alert-danger" role="alert">
+            Download Failed! please try again.
+        </div>
+        <div class="alert alert-success" role="alert">
+            Congratulations! Download Completed.
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <hr>
+
+        <!-- button group -->
+        <h2>Button Group</h2>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-outline-danger">Left</button>
+            <button type="button" class="btn btn-outline-warning">Middle</button>
+            <button type="button" class="btn btn-outline-success">Right</button>
+        </div>
+        <hr>
+
+        <!-- card -->
+        <h2>Card</h2>
+        <div class="card" style="width: 18rem;">
+            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" class="card-img-top" alt="bootstrap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <hr>
+
+        <!-- grid layout -->
+        <h2>Grid Layout</h2>
+        <div class="row">
+            <div class="col-sm bg-primary text-white text-center p-3">Column 1</div>
+            <div class="col-sm bg-secondary text-white text-center p-3">Column 2</div>
+            <div class="col-sm bg-success text-white text-center p-3">Column 3</div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-xl-6 bg-warning text-white text-center p-3">Column 1 (6)</div>
+            <div class="col-xl-6 bg-danger text-white text-center p-3">Column 2 (6)</div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-4 bg-info text-white text-center p-3">Column 1 (4)
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum explicabo iure eum aperiam optio iusto minima debitis ratione aliquam soluta dolores, aut aspernatur quisquam odit corrupti dolore atque porro minus.
+            </div>
+            <div class="col-md-4 bg-dark text-white text-center p-3">Column 2 (4)
+                <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat sequi repellendus autem maxime, recusandae quos ab quisquam deserunt fugiat impedit, odio voluptatem id voluptas voluptates ullam nihil velit fugit! Illum?
+            </div>
+            <div class="col-md-4 bg-light text-dark text-center p-3">Column 3 (4)
+                <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, repudiandae distinctio quod quae officia assumenda unde sunt ut nostrum, similique fuga laudantium officiis nulla nihil? Sed aliquam molestiae officia nisi?
+            </div>
+        </div>
+        <hr>
+        
+        <!-- grid (vertical alignment) -->
+        <h2>Grid (Vertical Alignment)</h2>
+        <div class="container text-center" >
+            <div class="row align-items-end">
+                <div class="col bg-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto qui vitae quis dolores voluptatibus cupiditate numquam aliquid. Quisquam, magnam. Quisquam, magnam. Quisquam, magnam. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium rerum minus sed quaerat eaque sunt incidunt maiores et saepe libero non similique maxime doloremque, atque ex reprehenderit adipisci eveniet?
+                </div>
+                <div class="col bg-success">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto qui vitae quis dolores voluptatibus cupiditate numquam aliquid. Quisquam, magnam. Quisquam, magnam. Quisquam, magnam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque illum suscipit beatae facilis amet excepturi modi. Nulla ducimus accusamus dignissimos rem molestiae et, reiciendis eius voluptatibus exercitationem quas doloremque.
+                </div>
+                <div class="col bg-warning">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto qui vitae quis dolores voluptatibus cupiditate numquam aliquid. Quisquam, magnam. Quisquam, magnam. Quisquam, magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere totam quo ea aut odio. Possimus porro illum labore aliquid tempore, voluptatibus expedita numquam perferendis, eos error illo perspiciatis consectetur cumque!
+                </div>
+                <div class="col bg-danger align-self-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto qui vitae quis dolores voluptatibus cupiditate numquam aliquid. Quisquam, magnam. Quisquam, magnam. Quisquam, magnam.
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- form control -->
+         <h2>Form Demo</h2>
+         <form>
+            <div class="row">
+                <div class="mb-3 col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" placeholder="example@email.com" class="form-control" id="email">
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="pass" class="form-label">Password</label>
+                    <input type="password" placeholder="Enter your password" class="form-control" id="pass">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="add" class="form-label">Address</label>
+                <input type="text" placeholder="Enter your Address" class="form-control" id="add">
+            </div>
+
+            <div class="mb-3">
+                <select class="form-select">
+                    <option value="" selected>Select your country</option>
+                    <option value="">India</option>
+                    <option value="">China</option>
+                    <option value="">Russia</option>
+                    <option value="">other</option>
+                </select>
+            </div>
+
+            <div class="form-check mb-3">
+                <label for="agree" class="form-check-label">Agree</label>
+                <input type="checkbox" id="agree" class="form-check-input">
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                <label class="form-check-label" for="radioDefault1">
+                    yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                <label class="form-check-label" for="radioDefault2">
+                    No
+                </label>
+            </div>
+
+            <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                <label class="form-check-label" for="switchCheckDefault">Default switch checkbox input</label>
+            </div>
+         </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
