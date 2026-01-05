@@ -21,8 +21,10 @@ This is not a full course or production-ready code, but a comprehensive referenc
   - [Part 6](css/part-6)
   - [Mini Project (Navbar)](css/mini-project)
   - [Project (Spotify Clone)](css/project)
-
 - [Bootstrap](bootstrap)
+- [JavaScript](javascript)
+  - [Part 1](javascript/part-1)
+  - [Part 2](javascript/part-2)
 
 ## License
 Licensed under the [MIT License](./LICENSE).
