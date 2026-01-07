@@ -26,6 +26,7 @@ This is not a full course or production-ready code, but a comprehensive referenc
   - [Part 1](javascript/part-1)
   - [Part 2](javascript/part-2)
   - [Part 3](javascript/part-3)
+  - [Part 4](javascript/part-4)
 
 ## License
 Licensed under the [MIT License](LICENSE).
