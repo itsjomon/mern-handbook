@@ -28,6 +28,7 @@ This is not a full course or production-ready code, but a comprehensive referenc
   - [Part 3](javascript/part-3)
   - [Part 4](javascript/part-4)
   - [Part 5](javascript/part-5)
+- [Terminal](terminal)
 
 ## License
 Licensed under the [MIT License](LICENSE).
