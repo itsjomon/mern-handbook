@@ -7,7 +7,7 @@ for (let i = 0; i < arr.length; i++) {
         i--;
     }
 }
-console.log(arr); // Output: [1, 3, 4, 5, 6, 3]
+console.log(arr); // [1, 3, 4, 5, 6, 3]
 
 
 
@@ -19,7 +19,7 @@ while(copy > 0) {
     count++;
     copy = Math.floor(copy/10);
 }
-console.log(count); // Output: 6
+console.log(count); // 6
 
 
 
@@ -32,7 +32,7 @@ while(copy2 > 0) {
     sum += digit;
     copy2 = Math.floor(copy2/10);
 }
-console.log(sum); // Output: 26
+console.log(sum); // 26
 
 
 
@@ -42,7 +42,7 @@ let factorial = 1;
 for(let i = 1; i <= n; i++) {
     factorial *= i;
 }
-console.log(`factorial of ${n} is ${factorial}`); // Output: factorial of 5 is 120
+console.log(`factorial of ${n} is ${factorial}`); // factorial of 5 is 120
 
 
 

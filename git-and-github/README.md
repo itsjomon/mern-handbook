@@ -1,7 +1,10 @@
-# Git & GitHub Documentation
+# Git & GitHub
+
+For a quick reference, check out this [Git Cheat Sheet](https://git-scm.com/cheat-sheet).
 
 ## What is Git?
-Free & Open Source **Version Control System** - a tool that help to track changes in code.
+
+Git is a Free & Open Source **Version Control System** - a tool that help to track changes in code.
 
 - Track history
 - Help to collaborate
@@ -9,11 +12,13 @@ Free & Open Source **Version Control System** - a tool that help to track change
 To get started with Git, [download Git here](https://git-scm.com).
 
 ## What is GitHub?
-Website where we host repositories online
+
+GitHub is a web-based platform where we hosts Git repositories online.
 
 [Create a GitHub Account](https://github.com)
 
 ## Using Git
+
 You can interact with Git using several methods:
 
 - Command Line (Most Popular)
@@ -21,6 +26,7 @@ You can interact with Git using several methods:
 - Graphical User Interface (like GitKraken)
 
 ## Configuring Git
+
 Before using Git, configure your Git user:
 
 ```bash
@@ -33,238 +39,257 @@ git config --global user.email "youremail@example.com"
 
 ## Basic Git Commands
 
-- **clone**:  cloning a repository on our local machine
+### clone
 
-    ```bash
-    git clone RepositoryLink
-    ```
+Cloning a repository on our local machine.
 
-- **status**: display the state of the code
+```bash
+git clone RepositoryLink
+```
 
-    ```bash
-    git status
-    ```
+### status
 
-- **log**: used to view the history of commits in your git repository
+Display the state of the code.
 
-    ```bash
-    git log
-    ```
+```bash
+git status
+```
 
-- **add**: adds new or changed files in your working directory to the git staging area.
+<img src="./file-status-lifecycle.png" alt="File Status Lifecycle" hight="150px" width="300px">
 
-    ```bash
-    git add FileName
-    ```
+### log
 
-    ```bash
-    git add .
-    # is used in Git to stage all changes in the current directory and all subdirectories for the next commit.
-    ```
+Used to view the history of commits in your git repository.
 
-- **commit**: it is the record of change
+```bash
+git log
+```
 
-    ```bash
-    git commit -m "some message"
-    ```
+### add
 
-- **push**: uploads local repo content to remote repo
+Adds new or changed files in your working directory to the git staging area.
 
-    ```bash
-    git push origin main
-    ```
+```bash
+git add fileName
+```
 
-- **init**: used to initialize a new Git repository in your current project directory.
+```bash
+git add .
+# Stages all changes in the current directory (new, modified, deleted files) so they’re ready to be committed.
+```
 
-    ```bash
-    git init
-    ```
+### commit
+
+It is the record of change.
+
+```bash
+git commit -m "some message"
+```
+
+### push
+
+Upload local repo content to remote repository.
+
+```bash
+git push origin main
+```
+
+### init
+
+Used to create a new Git repository.
+
+```bash
+git init
+```
+
+It initializes a hidden `.git` folder in your project directory, which stores all the metadata and version history, allowing you to start tracking changes with Git.
 
 ## Pushing Local Repo
 
-- **Initialize Git** (if not already done)
+### Initialize Git (if not already done)
 
-    ```bash
-    git init
-    ```
+```bash
+git init
+```
 
--  **Add files to staging area**:
+### Add files to staging area
 
-    ```bash
-    git add .
-    ```
+```bash
+git add .
+```
 
--  **Commit the staged files**:
+### Commit the staged files
 
-    ```bash
-    git commit -m "Initial commit"
-    ```
+```bash
+git commit -m "Initial commit"
+```
 
-- **Add a remote repository**:
+### Add a remote repository
 
-    ```bash
-    git remote add origin RepositoryLink
-    ```
+```bash
+git remote add origin RepositoryLink
+```
 
-- **Verify remote repository**:
+### Verify remote repository
 
-    ```bash
-    git remote -v
-    # to verify remote
-    ```
+```bash
+git remote -v
+# to verify remote
+```
 
-- **Check the current branch**:
+### Check the current branch
+
+```bash
+git branch
+# to check branch
+```
+
+### Rename the current branch
+
+```bash
+git branch -M main
+# to rename branch
+```
+
+### Push to remote repository
+
+```bash
+git push origin main
+# Pushes 'main' branch to the 'origin' remote (one-time push)
+
+git push -u origin main
+# -u sets upstream: links local 'main' to 'origin/main'
+# After this, you can just use:
+git push    # to push changes
+git pull    # to pull updates
+```
+
+## Workflow
+
+**Git workflow** is the process or set of steps developers follow to use Git effectively. It includes creating or cloning repositories, making changes, staging those changes, committing them, and syncing with a remote repository. The workflow helps track project history, collaborate with others, and manage code changes systematically.
+
+## Git Branches
+
+**Git branches** are independent lines of development within a project. They allow developers to work on new features, fixes, or experiments separately from the main codebase. Branches help isolate changes, making it easier to manage different versions of the project without affecting the stable code. Once work on a branch is complete, it can be merged back into the main branch.
+
+### Branch Commands
+
+- **Check the current branch**
 
     ```bash
     git branch
     # to check branch
     ```
 
-- **Rename the current branch**:
+- **Rename a branch**
 
     ```bash
-    git branch -M main
+    git branch -m new_name
     # to rename branch
     ```
 
-- **Push to remote repository**:
+- **Switch to another branch**
 
     ```bash
-    git push origin main
-    # Pushes 'main' branch to the 'origin' remote (one-time push)
+    git checkout branch_name
+    # to navigate
 
-    git push -u origin main
-    # -u sets upstream: links local 'main' to 'origin/main'
-    # After this, you can just use:
-    git push    # to push changes
-    git pull    # to pull updates
+    - **Create a new branch**
+    ```bash
+    git checkout -b new_branch_name
+    # to create new branch
     ```
 
-## Workflow
+- **Delete a branch**
 
-A **Git workflow** is the process or set of steps developers follow to use Git effectively. It includes creating or cloning repositories, making changes, staging those changes, committing them, and syncing with a remote repository. The workflow helps track project history, collaborate with others, and manage code changes systematically.
+    ```bash
+    git branch -d branch_name
+    # to delete branch
+    ```
 
-## Git Branches
+### Merging Branches
 
-**Git branches** are independent lines of development within a project. They allow developers to work on new features, fixes, or experiments separately from the main codebase. Branches help isolate changes, making it easier to manage different versions of the project without affecting the stable code. Once work on a branch is complete, it can be merged back into the main branch.
+- **Compare changes between branches**
 
-- **Branch Commands**
+    ```bash
+    git diff branch_name
+    # to compare commits, branches, files & more
+    ```
 
-    - **Check the current branch**:
+- **Merge branches**
 
-        ```bash
-        git branch
-        # to check branch
-        ```
+    ```bash
+    git merge branch_name
+    # to merge 2 branches
+    ```
 
-    - **Rename a branch**:
+    **Alternatively**, create a Pull Request (PR) on GitHub to merge branches.
 
-        ```bash
-        git branch -m new_name
-        # to rename branch
-        ```
+### Pull Request
 
-    - **Switch to another branch**:
+It lets you tell others about changes you've pushed to a branch in a repository on GitHub.
 
-        ```bash
-        git checkout branch_name
-        # to navigate
+```bash
+git pull origin main
+# Pull Command
+```
 
-    - **Create a new branch**:
+Used to fetch and download content from a remote repo and immediately update the local repo to match that content.
 
-        ```bash
-        git checkout -b new_branch_name
-        # to create new branch
-        ```
+### Merge Conflicts
 
-    - **Delete a branch**:
-
-        ```bash
-        git branch -d branch_name
-        # to delete branch
-        ```
-
-    - **Merging Branches**
-
-        - **Compare changes between branches**:
-
-            ```bash
-            git diff branch_name
-            # to compare commits, branches, files & more
-            ```
-
-        - **Merge branches**:
-
-            ```bash
-            git merge branch_name
-            # to merge 2 branches
-            ```
-
-        **Alternatively**, create a Pull Request (PR) on GitHub to merge branches.
-
-- **Pull Request** <br>
-    It lets you tell others about changes you've pushed to a branch in a repository on GitHub.
-
-    - **Pull Command**:
-
-        ```bash
-        git pull origin main
-        ```
-
-        Used to fetch and download content from a remote repo and immediately update the local repo to match that content
-
-- **Merge Conflicts** <br>
-    An event that takes places when Git is unable to automatically resolve differences in code between two commits.
+An event that takes places when Git is unable to automatically resolve differences in code between two commits.
 
 ## Fixing Mistakes
 
-- **Case 1: Staged Changes**
+### Case 1: Staged Changes
 
-    ```bash
-    git reset FileName
-    # Unstage a specific file (keeps changes in working directory)
-    ```
+```bash
+git reset fileName
+# Unstage a specific file (keeps changes in working directory)
+```
 
-    ```bash
-    git reset
-    # Unstage all staged files (keeps changes in working directory)
-    ```
+```bash
+git reset
+# Unstage all staged files (keeps changes in working directory)
+```
 
-- **Case 2: Undo the Last Commit**
+### Case 2: Commited changes (for one commit)
 
-    ```bash
-    git reset HEAD~1
-    # Undo the last commit (keeps changes in working directory, unstaged)
-    ```
+```bash
+git reset HEAD~1
+# Undo the last commit (keeps changes in working directory, unstaged)
+```
 
-    ```bash
-    git reset --soft HEAD~1
-    # Undo the last commit but keep changes staged (ready to recommit)
-    ```
+```bash
+git reset --soft HEAD~1
+# Undo the last commit but keep changes staged (ready to recommit)
+```
 
-- **Case 3: Undo Multiple Commits**
+### Case 3: Commited changes (for many commits)
 
-    ```bash
-    git reset commit_hash
-    # Soft reset: keep changes in working directory and staging area
-    ```
+```bash
+git reset commit_hash
+# Soft reset: keep changes in working directory and staging area
+```
 
-    ```bash
-    git reset --hard commit_hash
-    # ⚠️ Hard reset: deletes all changes after the target commit (cannot be undone)
-    ```
+```bash
+git reset --hard commit_hash
+# ⚠️ Hard reset: deletes all changes after the target commit (cannot be undone)
+```
 
-- **Case 4: Sync Remote After Reset**
+### Sync Remote After Reset
 
-    ```bash
-    git push origin HEAD --force
-    # ⚠️ Force push to overwrite remote history after reset (use with caution)
-    ```
+```bash
+git push origin main --force-with-lease
+# ✅ Safe overwrite. Updates the remote branch only if no one else has pushed new code since you last fetched; aborts otherwise.
+```
 
-    ```bash
-    git push --force-with-lease
-    # ✅ Safer force push: only if no one else pushed after your last pull
-    ```
+```bash
+git push origin main --force
+# ⚠️ Destructive overwrite. Blindly replaces the remote branch with your local version, deleting any changes pushed by others.
+```
 
 ## What is Forking?
+
 A fork is a new repository that shares code and visibility settings with the original "upstream" repository. Fork is a rough copy.

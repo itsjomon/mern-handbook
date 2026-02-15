@@ -13,12 +13,20 @@ for (let i = 20; i >= 15; i = i - 2) {
 for (let i = 1; i <= 15; i = i+2) {
     console.log(i); // 1 3 5 7 9 11 13 15
 }
+// backward odd numbers from 15 to 1
+for (let i = 15; i >= 1; i = i-2) {
+    console.log(i); // 15 13 11 9 7 5 3 1
+}
 
 
 
-// print all even numbers form 1 to 10
+// print all even numbers form 2 to 10
 for (let i = 2; i <= 10; i = i+2) {
     console.log(i); // 2 4 6 8 10
+}
+// backward even numbers from 10 to 2
+for (let i = 10; i >= 2; i = i-2) {
+    console.log(i); // 10 8 6 4 2
 }
 
 
@@ -32,7 +40,7 @@ for (let i = 5; i <= 50; i = i+5) {
 
 // print the multiplication table input form user
 let n = prompt("Enter a number to print its multiplication table:");
-n = parseInt(n);
+n = parseInt(n); // converting string input to integer
 for (let i = n; i <= n*10; i = i+n) {
     console.log(i); // if user enters 7, output will be 7 14 21 28 35 42 49 56 63 70
 }
@@ -46,7 +54,7 @@ for (let i = 1; i <= 3; i++) {
         console.log(j);
     }
 }
-// output
+// output:
 // Outer loop: 1
 // 1
 // 2
@@ -91,7 +99,7 @@ fruits.push("grapes");
 for (let i = 0; i < fruits.length; i++) {
     console.log(i, fruits[i]);
 }
-// output
+// output:
 // 0 'mango'
 // 1 'apple'
 // 2 'banana'
@@ -103,7 +111,7 @@ for (let i = 0; i < fruits.length; i++) {
 for (let i = fruits.length - 1; i >= 0; i--) {
     console.log(i, fruits[i]);
 }
-// output
+// output:
 // 5 'grapes'
 // 4 'orange'
 // 3 'litchi'
@@ -122,7 +130,7 @@ for (let i = 0; i < heroes.length; i++) {
         console.log(j, heroes[i][j]);
     }
 }
-// output
+// output:
 // array 0
 // 0 'ironman'
 // 1 'spiderman'
@@ -140,7 +148,7 @@ for (let i = 0; i < students.length; i++) {
         console.log(students[i][j]);
     }
 }
-// output
+// output:
 // student 1
 // geo
 // 75
@@ -159,7 +167,7 @@ let fruits2 = ["mango", "apple", "banana", "litchi", "orange"]
 for (fruit of fruits2) {
     console.log(fruit);
 }
-// output
+// output:
 // mango
 // apple
 // banana
@@ -169,7 +177,7 @@ for (fruit of fruits2) {
 for (char of "HelloWorld") {
     console.log(char);
 }
-// output
+// output:
 // H
 // e
 // l
@@ -191,7 +199,7 @@ for (list of heroes2) {
         console.log(hero);
     }
 }
-// output
+// output:
 // ironman
 // spiderman
 // thor

@@ -1,5 +1,6 @@
 ## Alpha Channel
-sets the opacity for a color
+
+Sets the opacity for a color
 
 Ranges from 0 to 1
 
@@ -7,7 +8,8 @@ Ranges from 0 to 1
 rgba(255, 255, 255, 0.3);
 ```
 
-## Opacity
+## opacity
+
 Sets the opacity for the element
 
 Ranges from 0 to 1
@@ -16,18 +18,20 @@ Ranges from 0 to 1
 opacity: 0.5;
 ```
 
-## CSS Transitions
+## transitions
+
 Transitions enable you to define the transition between two states of an element
 
-- **Transition Shorthand**
+### Transition Shorthand
 
-    property name | duration | timing-function | delay
+property name | duration | timing-function | delay
 
-    ```css
-    transition: margin-top 2s ease-in-out 0.2;
-    ```
+```css
+transition: margin-top 2s ease-in-out 0.2;
+```
 
-## CSS Transform
+## transform
+
 This property lets you rotate, scale, skew, or translate an element
 
 ```css
@@ -49,14 +53,16 @@ transform: translateY(10px);
 transform: skew(45deg);
 ```
 
-## Box Shadow
-it adds shadow effects around an element's frame
+## box-shadow
+
+It adds shadow effects around an element's frame
 
 ```css
 box-shadow: 2px 2px 10px green;
 ```
 
-## Background Image
+## background-image
+
 Lets you set an image as a background
 
 ```css
@@ -67,7 +73,8 @@ background-size: cover; /* crop but not scale */
 background-size: auto; /* stretch the image to fit */
 ```
 
-## Position
+## position
+
 The position CSS property sets how an element is positioned in a document.
 
 The `top`, `right`, `bottom`, and `left` properties determine the final location of positioned elements.
@@ -77,20 +84,40 @@ The `top`, `right`, `bottom`, and `left` properties determine the final location
 - absolute
 - fixed
 
-    - **Position - Static** <br>
-        The top, right, bottom, left, and z-index properties have no effect.
+### Position - Static
 
-        This is the `default` value.
+The top, right, bottom, left, and z-index properties have no effect.
 
-    - **Position - Relative** <br>
-        The offset is relative to itself based on the values of top, right, bottom, and left.
+This is the `default` value.
 
-    - **Position - Absolute** <br>
-        The element is removed from the normal document flow, and no space is created for the element in the page layout.
+```css
+position: static;
+```
 
-        It is positioned `relative to its closest positioned ancestor`, if any; otherwise, it is placed relative to the initial containing block.
+### Position - Relative
 
-    - **Position - Fixed** <br>
-        The element is removed from the normal document flow, and no space is created for the element in the page layout.
+The offset is relative to itself based on the values of top, right, bottom, and left.
 
-        It is positioned `reative to the initial containing block` established by the viewport.
+```css
+position: relative;
+```
+
+### Position - Absolute
+
+The element is removed from the normal document flow, and no space is created for the element in the page layout.
+
+It is positioned `relative to its closest positioned ancestor`, if any; otherwise, it is placed relative to the initial containing block.
+
+```css
+position: absolute;
+```
+
+### Position - Fixed
+
+The element is removed from the normal document flow, and no space is created for the element in the page layout.
+
+It is positioned `reative to the initial containing block` established by the viewport.
+
+```css
+position: fixed;
+```

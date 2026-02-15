@@ -1,3 +1,5 @@
+// Favorite Movie
+
 let favMovie = "dune";
 let guess = prompt("Guess my favorite movie, (type 'quit' to exit).");
 
@@ -10,5 +12,5 @@ while(guess != favMovie) {
 }
 
 if(guess == favMovie) {
-    console.log("You guessed it right, my favorite movie is Dune!");
+    console.log(`You guessed it right, my favorite movie is ${favMovie}!`);
 }

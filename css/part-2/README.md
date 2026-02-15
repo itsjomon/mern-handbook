@@ -1,99 +1,110 @@
 ## CSS Selectors
+
 CSS selectors are used to "find" (or select) the HTML elements you want to style.
 
-- **Simple selectors (Select elements based on name, id, class)**
+### Simple selectors (Select elements based on name, id, class)
 
-  - **Universal Selector** <br>
-    To select everything in a document
+- **Universal Selector**
 
-    ```css
-    * {
-      property: value;
-    }
-    /* * is Universal Selector */
-    ```
+  To select everything in a document
 
-  - **Element Selector**
+  ```css
+  * {
+    property: value;
+  }
+  /* * is Universal Selector */
+  ```
 
-    ```css
-    h1 {
-      property: value;
-    }
-    /* h1 is Elemet Selector*/
-    ```
+- **Element Selector**
 
-  - **ID Selector** <br>
-    Selects an element based on the value of the element's id attribute
+  ```css
+  h1 {
+    property: value;
+  }
+  /* h1 is Elemet Selector*/
+  ```
 
-    - It is case sensitive. eg: `#myid` & `#MYID` both are not same
-      ```css
-      #myid {
-        property: value;
-      }
-      /* #myid is ID Selector*/
-      ```
+- **ID Selector**
 
-  - **Class Selector** <br>
-    Selects an element based on their class attribute
+  Selects an element based on the value of the element's id attribute
 
-    ```css
-    .myclass {
-      property: value;
-    }
-    /* .myclass is Class Selector*/
-    ```
+  It is case sensitive. eg: `#myid` & `#MYID` both are not same
 
-- **Combinator selectors (select elements based on a specific relationship between them)**
+  ```css
+  #myid {
+    property: value;
+  }
+  /* #myid is ID Selector*/
+  ```
 
-  - **Descendant Selector (space)** <br>
-    It is used to select elements that are descendants of a specified element.
+- **Class Selector**
 
-    Eg - Selects all paragraphs inside divs
+  Selects an element based on their class attribute
 
-    ```css
-    div p{
-      property: value;
-    }
-    /* div p is Descendant Selector */
-    ```
+  ```css
+  .myclass {
+    property: value;
+  }
+  /* .myclass is Class Selector*/
+  ```
 
-  - **Adjecent/Next Sibling Combinator (+)** <br>
-    The adjacent sibling selector selects an element that is immediately next to a specified element.
+### Combinator selectors (select elements based on a specific relationship between them)
 
-    Eg - Heading3 that comes immediately after any paragraph
+- **Descendant Selector (space)**
 
-    ```css
-    p + h3{
-      property: value;
-    }
-    /* p + h3 is Sibling Combinator */
-    ```
+  It is used to select elements that are descendants of a specified element.
 
-  - **child Combinator (>)** <br>
-    The child combinator selects all elements that are the children of a specified element.
+  Eg - Selects all paragraphs inside divs
 
-    Eg - Selects all buttons which are direct children of spans
-    ```css
-    span > button{
-      property: value;
-    }
-    /* span > button is Child Combinator */
-    ```
+  ```css
+  div p{
+    property: value;
+  }
+  /* div p is Descendant Selector */
+  ```
 
-- **Attribute selectors (select elements based on an attribute or attribute value)**
+- **Adjecent/Next Sibling Combinator (+)**
 
-  - **Attribute Selector** <br>
-    Eg - Selects elements based on the presence or value of a given attribute
+  The adjacent sibling selector selects an element that is immediately next to a specified element.
 
-    ```css
-    input[attr="value"]{
-      property: value;
-    }
-    ```
+  Eg - Heading3 that comes immediately after any paragraph
 
-  Visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">mdn attribute selectors</a>
+  ```css
+  p + h3{
+    property: value;
+  }
+  /* p + h3 is Sibling Combinator */
+  ```
+
+- **Child Combinator (>)**
+
+  The child combinator selects all elements that are the children of a specified element.
+
+  Eg - Selects all buttons which are direct children of spans
+
+  ```css
+  span > button{
+    property: value;
+  }
+  /* span > button is Child Combinator */
+  ```
+
+### Attribute selectors (select elements based on an attribute or attribute value)
+
+**Attribute Selector**
+
+Eg - Selects elements based on the presence or value of a given attribute
+
+```css
+input[attr="value"]{
+  property: value;
+}
+```
+
+Visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">mdn attribute selectors</a>
 
 ## Pseudo class
+
 A keyword added to a selector that specifies a special state of the selected element(s)
 
 ```css
@@ -106,6 +117,7 @@ A keyword added to a selector that specifies a special state of the selected ele
 Visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">mdn pseudo classes</a>
 
 ## Pseudo Elements
+
 A keyword added to a selector that lets you style a specific part of the selected element(s)
 
 ```css
@@ -118,30 +130,39 @@ Visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements"
 
 ## Cascading
 
-- **What is cascade in CSS?** <br>
-  The `CSS cascade algorithm's` job is to select CSS declarations in order to determine the correct values for CSS properties.
+### What is cascade in CSS?
 
-- **What is specificity?** <br>
-  Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration.
+The `CSS cascade algorithm's` job is to select CSS declarations in order to determine the correct values for CSS properties.
 
-  ```css
-  h2 {
-      background-color: yellow;
-  }
-  h2 {
-      background-color: blue;
-  }
+### What is specificity?
 
-  /* final color is blue */
-  ```
+Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration.
 
-- **Cascading**: When multiple styles apply, the last one (in order) wins if specificity is equal.
+```css
+h2 {
+    background-color: yellow;
+}
+h2 {
+    background-color: blue;
+}
 
-- **Multiple CSS files**: The last linked file overrides earlier ones.
+/* final color is blue */
+```
 
-- **Specificity order**: `Inline > ID > Class > Tag`
+### Cascading
+
+When multiple styles apply, the last one (in order) wins if specificity is equal.
+
+### Multiple CSS files
+
+The last linked file overrides earlier ones.
+
+### Specificity order
+
+`Inline > ID > Class > Tag`
 
 ## !important in CSS
+
 To show the most specific thing in the document.
 
 ```css
@@ -156,12 +177,10 @@ In fact, if you use the !important rule, it will override ALL previous styling r
 
 ## CSS Inheritance
 
-- **Definition**: Inheritance means some CSS properties are automatically passed from a parent element to its children.
+Inheritance means some CSS properties are automatically passed from a parent element to its children.
 
-- **Common inherited properties**: `color`, `font-family`, `line-height`
-
-- **Not all properties inherit**: Layout-related ones like `margin`, `padding`, `border` do not inherit by default.
-
+- **Common inherited properties** : `color`, `font-family`, `line-height`
+- **Not all properties inherit** : Layout-related ones like `margin`, `padding`, `border` do not inherit by default.
 - You can force inheritance using `inherit` keyword:
 
   ```css

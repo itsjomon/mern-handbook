@@ -1,4 +1,5 @@
 ## console.log()
+
 To write (log) a message on the console
 
 ```js
@@ -18,12 +19,13 @@ console.log("Hello", "World", 123);
 ```
 
 ## Template Literals
+
 They are used to add embedded expressions in a string.
 
 ```js
 let a = 5;
 let b = 10;
-console.log(`Your pay ${a + b} rupees`);
+console.log(`Price is ${a + b} rupees`); // 15
 
 // console.log("Price is", a + b, "rupees");
 ```
@@ -36,49 +38,54 @@ console.log(`Your pay ${a + b} rupees`);
 - Comparison
 - Logical
 
-- **Comparison Operator** <br>
-    Comparison Operators used to compare 2 values
+### Comparison Operator
 
-    `>, >=, <, <=, ==, !=`
+Comparison Operators used to compare 2 values
 
-    - `==`, `!=` compares value, not type
-    - `===`, `!==` compares value & type
+`>, >=, <, <=, ==, !=`
 
-        <img src="./assets/value-and-type.png" alt="Value and Type" height="300px" width="400px"><br>
-    - Comparison for non numbers<br>
-        <img src="./assets/comparison-for-non-numbers.png" alt="Comparison for Non-numbers" height="300px" width="400px">
+- `==`, `!=` compares value, not type
+- `===`, `!==` compares value & type
 
-- **Logical Operators** <br>
-    Logical operators are used to combine boolean expressions.
+<img src="./assets/value-and-type.png" alt="Value and Type" height="300px" width="400px">
+    
+<img src="./assets/comparison-for-non-numbers.png" alt="Comparison for Non-numbers" height="300px" width="400px">
 
-    - && Logical AND
-    - || Logical OR
-    - ! Logical NOT
+### Logical Operators
 
-    ```js
-    true && true // true
-    true && false // false
-    false && true // false
-    false && false // false
+Logical operators are used to combine boolean expressions.
 
-    true || true // true
-    true || false // true
-    false || true // true
-    false || false // false
+- && Logical AND
+- || Logical OR
+- ! Logical NOT
 
-    !true // false
-    !false // true
-    ```
+```js
+true && true // true
+true && false // false
+false && true // false
+false && false // false
+
+true || true // true
+true || false // true
+false || true // true
+false || false // false
+
+!true // false
+!false // true
+```
 
 ## truthy and falsy
+
 Everything in JS is true or false (in boolean context).
 
 This doest'nt mean their value itself is false or true, but they are treated as false or true if taken in boolean context.
 
-- **Falsy values** <br>
+### Falsy values
+
 false, 0 , -0, 0n (bigint value), ""(empty string), null, undefined, NaN
 
-- **Truthy values** <br>
+### Truthy values
+
 Everything else
 
 ## Conditional Statements
@@ -87,81 +94,83 @@ Everything else
 - nested if-else
 - switch
 
-- **if Statement**
+### if Statement
 
-    ```js
-    // some code before if
+```js
+// some code before if
 
-    if (some condition) {
-        // Do SOMETHING
-    }
+if (some condition) {
+    // Do SOMETHING
+}
 
-    // some code after if
-    ```
+// some code after if
+```
 
-- **else if Statement**
+### else if Statement
 
-    ```js
-    if (condition1) {
-        // Do SOMETHING
-    }
-    else if (condition2) {
-        // Do SOMETHING ELSE
-    }
-    else if (condition3) {
-        // Do SOMETHING ELSE
-    }
-    ```
+```js
+if (condition1) {
+    // Do SOMETHING
+}
+else if (condition2) {
+    // Do SOMETHING ELSE
+}
+else if (condition3) {
+    // Do SOMETHING ELSE
+}
+```
 
-- **else Statement**
+### else Statement
 
-    ```js
-    if (condition1) {
+```js
+if (condition1) {
+    // Do SOMETHING
+}
+else {
+    // Do SOMETHING ELSE
+}
+
+```
+
+### Nested if-else Statement
+
+Nesting is writing if-else inside if-else statements. It can have many levels
+
+```js
+if (condition1) {
+    if (condition2) {
         // Do SOMETHING
     }
     else {
         // Do SOMETHING ELSE
     }
+}
+else {
+    // Do SOMETHING ELSE
+}
+```
 
-    ```
+### switch Statement
 
-- **Nested if-else** <br>
-    Nesting is writing if-else inside if-else statements. It can have many levels
+Used when we have some fixed values that we need to compare to.
 
-    ```js
-    if (condition1) {
-        if (condition2) {
-            // Do SOMETHING
-        }
-        else {
-            // Do SOMETHING ELSE
-        }
-    }
-    else {
-        // Do SOMETHING ELSE
-    }
-    ```
+```js
+let color = "yellow";
 
-- **Switch Statement** <br>
-    Used when we have some fixed values that we need to compare to.
-
-    ```js
-    let color = "yellow";
-
-    switch (color) {
-        case "red" :
-            console.log ("Stop");
-            break;
-        case "yellow" :
-            console.log ("Slow Down");
-            break;
-        case "green" :
-            console.log ("Go");
-            break;
-        default :
-            console.log ("Briken Light");
-    }
-    ```
+switch (color) {
+    case "red" :
+        console.log ("Stop");
+        break;
+    case "yellow" :
+        console.log ("Slow Down");
+        break;
+    case "green" :
+        console.log ("Go");
+        break;
+    default :
+        console.log ("Broken Light");
+}
+```
 
 ## Alerts & Prompts
 

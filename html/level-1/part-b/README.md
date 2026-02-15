@@ -1,2 +1,1 @@
-## check out:
-MDN: https://developer.mozilla.org/en-US/
+## Check out the MDN web docs: https://developer.mozilla.org/en-US/

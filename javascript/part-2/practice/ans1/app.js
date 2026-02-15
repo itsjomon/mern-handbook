@@ -8,6 +8,10 @@ else if (color === 'yellow') {
 else if (color === 'green') {
     console.log('Go');
 }
+else {
+    console.log('Broken Light');
+}
+
 
 // let color = "yellow";
 // switch (color) {

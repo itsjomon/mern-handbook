@@ -8,7 +8,6 @@ console.log(students[2][0]); // g
 console.log(students.length); // 3
 
 
-
 // Push, Pop, Shift, Unshift
 students.push("jkl"); // adds 'jkl' at the end
 console.log(students); // (4) ['abc', 'def', 'ghi', 'jkl']
@@ -23,7 +22,6 @@ students.unshift("xyz"); // adds 'xyz' at the beginning
 console.log(students); // (3) ['xyz', 'def', 'ghi']
 
 
-
 // indexOf and includes
 console.log(students.indexOf("def")); // 1
 console.log(students.indexOf("Def")); // -1
@@ -33,7 +31,6 @@ console.log(students.includes("abc")); // false
 console.log(students.includes("def")); // true
 
 
-
 // concat(concatenate)
 let primary = ["red", "yellow", "blue"];
 let secondary = ["orange", "green", "violet"];
@@ -41,12 +38,10 @@ let secondary = ["orange", "green", "violet"];
 console.log(primary.concat(secondary)); // (6) ['red', 'yellow', 'blue', 'orange', 'green', 'violet']
 
 
-
 // reverse
 let colors = ["red", "yellow", "blue"];
 
 console.log(colors.reverse()); // (3) ['blue', 'yellow', 'red']
-
 
 
 // slice
@@ -56,7 +51,6 @@ console.log(colors2.slice()); // (6) ['red', 'yellow', 'blue', 'orange', 'pink',
 console.log(colors2.slice(2)); // (4) ['blue', 'orange', 'pink', 'white']
 console.log(colors2.slice(2, 3)); // ['blue']
 console.log(colors2.slice(-2)); // (2) ['pink', 'white']
-
 
 
 // splice
@@ -70,14 +64,12 @@ console.log(colors3.splice(0, 1, "black", "grey")); // ['yellow']
 console.log(colors3); // (4) ['black', 'grey', 'blue', 'orange']
 
 
-
 //sort
 let days = ["monday", "sunday", "wednesday", "tuesday"];
 console.log(days.sort()); // (4) ['monday', 'sunday', 'tuesday', 'wednesday']
 
 let squares = [25, 16, 4, 49, 36, 9];
 console.log(squares.sort()); // (6) [16, 25, 36, 4, 49, 9]
-
 
 
 // array reference
@@ -97,12 +89,10 @@ console.log(arr); // (3) ['a', 'b', 'c']
 console.log(arr == arrCopy); // true
 
 
-
 // constant arrays
 const arr2 = [1, 2, 3, 4, 5];
 console.log(arr2.push(6)); // 6
 console.log(arr2); // (6) [1, 2, 3, 4, 5, 6]
-
 
 
 // nested arrays/multi dimentional arrays

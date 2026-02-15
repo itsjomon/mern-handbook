@@ -1,15 +1,17 @@
 # JavaScript
-JavaScript is a programming language used to make websites interactive. It runs in web browsers and allows developers to create dynamic features like buttons, animations, pop-ups, and real-time updates. JavaScript is essential for modern web development and works alongside HTML and CSS to build responsive and engaging websites.
+
+JavaScript (JS) is a high-level programming language used primarily for creating interactive and dynamic features on websites, working alongside HTML and CSS. It allows developers to implement complex functionalities like animations, form validation, and real-time content updates.
 
 ## Using the Console
+
 Uses REPL
 
 REPL: Read-Evaluate-Print Loop
 
 A REPL is an interactive programming environment that takes single user inputs, reads them, evaluates them, prints the result, and then loops back for more input.
-Read-Evaluate-Print-Loop
 
 ## What is a Variable?
+
 A variable is a named container used to store data in programming.
 
 <img src="./assets/variable.png" alt="Variable" height="250px" width="400px">
@@ -18,7 +20,7 @@ A variable is a named container used to store data in programming.
 
 | Primitive Types |
 |-----------------|
-| Numbers         |
+| Number          |
 | Boolean         |
 | String          |
 | Undefined       |
@@ -26,235 +28,269 @@ A variable is a named container used to store data in programming.
 | BigInt          |
 | Symbol          |
 
-- **Numbers in JS**
+### Numbers in JS
 
-    - positive (14) & Negative (-4)
-    - Integers (45, -50)
-    - Floating numbers - with decimal (4.6, -8.9)
+- positive (14) & Negative (-4)
+- Integers (45, -50)
+- Floating numbers - with decimal (4.6, -8.9)
 
-- **Boolean in JS** <br>
-    Boolean represents a truth value -> true or false / yes or no
+### Boolean in JS
 
-    ```js
-    let age = 23;
-    let isAdult = true;
+Boolean represents a truth value -> true or false / yes or no
 
-    let age = 13;
-    let isAdult = false;
-    ```
+```js
+let age = 23;
+let isAdult = true;
 
-- **Strings in Js** <br>
-    Strings are text or sequence of characters
+let age = 13;
+let isAdult = false;
+```
 
-    ```js
-    let name = "Tony Stark";
-    let role = "IronMan";
-    let char = 'a';
-    let num ='23';
-    let empty = "";
+### String in Js
 
-    let sentence = 'this is "apple"';
-    let sentence = "this is 'apple'";
-    ```
+Strings are text or sequence of characters
 
-    - **String Indices** <br>
-        JS is a 0 based indexing programming language
+```js
+let name = "Tony Stark";
+let role = "IronMan";
+let char = 'a';
+let num ='23';
+let empty = "";
 
-        <img src="./assets/string-indices.png" alt="String Indices" height="250px" width="400px">
+let sentence1 = 'this is "apple"';
+let sentence2 = "this is 'orange'";
+```
 
-    - **Concatenation** <br>
-        adding strings together
+- **String Indices**
 
-        ```js
-        "tony" + " " + "stark" = "tony stark"
+    JS is a 0 based indexing programming language
 
-        "tony" + 1 = "tony1"
-        ```
-
-- **null & undefined in JS** <br>
-
-    - **undefined**: A variable that has not been assigned a value is of type undefined
-
-        ```js
-        let a;
-        //undefined
-
-        a
-        //undefined
-        ```
-
-    - **null**: The null value represents the intentional absence of any object value.
-
-        To be explicitly assigned.
-
-        ```js
-        let a = null;
-        //undefined
-
-        a
-        //undefined
-        ```
-
-## JS Operators and Concepts
-
-- **Arithmetic Operators**
+    <img src="./assets/string-indices.png" alt="String Indices" height="250px" width="400px">
 
     ```js
-    a = 20
-    b = 10
+    let name ="TONY STARK"
 
-    //addition
-    sum = a + b
+    name[0]; // T
+    name[5]; // S
+    name[1000]; // Undefined
 
-    //subtraction
-    diff = a - b
+    name.length; // !0
 
-    //multiplication
-    prod = a * b
-
-    //division
-    div = a / b
-
-    //modulo
-    rem = a % b
+    name[name.length-1]; // K
     ```
 
-    - Modulo (reminder operator) `12 % 5 = 2`
-    - Exponentiation (power operation) `2**3 = 8`
+- **Concatenation**
 
-- **NaN in JS** <br>
-    The NaN global property is a value representing **Not-A-Number**.
+    Adding strings together
 
     ```js
-    0/0 // NaN
-
-    NaN - 1 // NaN
-
-    NaN * 1 // NaN
-
-    NaN + NaN // NaN
+    let firstName = "Tony";
+    let lastName = "Stark";
+    let fullName = firstName + lastName; // Tony Stark
     ```
 
-- **Operator Precedence** <br>
-    Operator Precedence is a set of rules that determines the order in which different operators in an expression are evaluated.
+### null & undefined in JS
 
-    Operator Precedence for Arithmetic Operators: `( )` `**` `*, /, %` `+, -`
-
-- **Assignment Operators**
+- **undefined**: A variable that has not been assigned a value is of type undefined
 
     ```js
-    age = age + 1;
-    age += 1;
-
-    age = age - 1;
-    age -= 1;
-
-    age = age * 1;
-    age *= 1;
+    let a; // undefined
     ```
 
-- **Unary Operators**
+- **null**: The null value represents the intentional absence of any object value.
+
+    To be explicitly assigned.
 
     ```js
-    age = age + 1;
-    age += 1;
-    age++ // increment
-
-    age = age - 1;
-    age -= 1;
-    age-- //decrement
+    let a = null; // null
     ```
 
-    - Pre-increment (Change, then use)
+## Operators in JS
 
-        ```js
-        let age = 10;
-        let newAge = ++age;
-        ```
+### Arithmetic Operators
 
-    - Post-increment (use, then change)
+```js
+a = 20;
+b = 10;
 
-        ```js
-        let age = 10;
-        let newAge = age++;
-        ```
+// Addition
+sum = a + b;
 
-    - Pre-decrement (Change, then use)
+// Subtraction
+diff = a - b;
 
-        ```js
-        let age = 10;
-        let newAge = --age;
-        ```
+// Multiplication
+prod = a * b;
 
-    - Post-decrement (use, then change)
+// Division
+div = a / b;
 
-        ```js
-        let age = 10;
-        let newAge = age--;
-        ```
+// Modulo
+rem = a % b;
+```
+
+- Modulo (reminder operator) `12 % 5 = 2`
+- Exponentiation (power operation) `2**3 = 8`
+
+### NaN in JS
+
+The NaN global property is a value representing **Not-A-Number**.
+
+```js
+0 / 0; // NaN
+
+NaN - 1; // NaN
+
+NaN * 1; // NaN
+
+NaN + NaN; // NaN
+```
+
+### Operator Precedence
+
+This is the general order of solving an expression.
+
+`( )`
+
+`**`
+
+`*, /, %`
+
+`+, -`
+
+### Assignment Operators
+
+```js
+age = age + 1;
+age += 1;
+
+age = age - 1;
+age -= 1;
+
+age = age * 1;
+age *= 1;
+```
+
+### Unary Operators
+
+```js
+age = age + 1;
+age += 1;
+age++ // Unary increment (POST-increment)
+
+age = age - 1;
+age -= 1;
+age-- // Unary decrement (POST-decrement)
+```
+
+- **Pre-increment** (Change, then use)
+
+    ```js
+    let age = 10;
+    let newAge = ++age;
+    // Step-by-step:
+    // 1. ++age increases age to 11 FIRST
+    // 2. newAge = 11
+    // 3. age is now 11
+    ```
+
+- **Post-increment** (use, then change)
+
+    ```js
+    let age = 10;
+    let newAge = age++;
+    // Step-by-step:
+    // 1. age++ gives current value (10) to newAge FIRST
+    // 2. newAge = 10
+    // 3. THEN age increases to 11
+    ```
+
+- **Pre-decrement** (Change, then use)
+
+    ```js
+    let age = 10;
+    let newAge = --age;
+    // Step-by-step:
+    // 1. --age decreases age to 9 FIRST
+    // 2. newAge = 9
+    // 3. age is now 9
+    ```
+
+- **Post-decrement** (use, then change)
+
+    ```js
+    let age = 10;
+    let newAge = age--;
+    // Step-by-step:
+    // 1. age-- gives current value (10) to newAge FIRST
+    // 2. newAge = 10
+    // 3. THEN age decreases to 9
+    ```
     
 ## let, const, and var Keywords 
 
-- **let keyword** <br>
-    Syntax of declaring variables.
+### let keyword
 
-    ```js
-    let age = 23;
-    age = age + 1;
+Syntax of declaring variables.
 
-    let cgpa;
-    cgpa = 8.9
+```js
+let age = 23;
+age = age + 1; // 24
 
-    let num1 = 1;
-    let num2 = 2;
-    let sum = num1 + num2;
-    ```
+let cgpa;
+cgpa = 8.9;
+cgpa = cgpa * 10; // 89
 
-- **const Keyword** <br>
-    Values of constants can't be chnaged with re-assignment & they can't be re-declared.
+let num1 = 1;
+let num2 = 2;
+let sum = num1 + num2; // 3
+```
 
-    ```js
-    const year = 2025;
-    year = 2026; //Error
-    year = year + 1; //Error
+### const Keyword
 
-    const pi = 3.14;
-    const g = 9.8;
-    ```
+Values of constants can't be changed with re-assignment & they can't be re-declared.
 
-- **var Keyword** <br>
-    Old Syntax of writing variables
+```js
+const year = 2025;
+year = 2026; // Error
+year = year + 1; // Error
 
-    ```js
-    var age = 23;
-    var cgpa = 8.9;
+const pi = 3.14;
+const g = 9.8;
+```
 
-    var num1 = 1;
-    var num2 = 2;
-    var sum = num1 + num2;
-    ```
+### var Keyword
+
+Old Syntax of writing variables
+
+```js
+var age = 23;
+var cgpa = 8.9;
+
+var num1 = 1;
+var num2 = 2;
+var sum = num1 + num2;
+```
 
 ## Identifier Rules
+
 All JavaScript variables must be identified with unique names (identifiers).
 
 - Names can contain letters, digits, underscores, and dollar signs. (no space)
 - Names must begin with a letter.
 - Names can also begin with $ and _.
 - Names are case sensitive (y and Y are different variables).
-- reserved words (like javaScript keywords) CANNOT be used as names.
+- Reserved words (like javaScript keywords) CANNOT be used as names.
 
-- **camelCase**
+### camelCase
 
-    Way of Writing identifiers
+Way of Writing identifiers
 
-    camelCase (JS naming convention)
-
-    snake_case
-
-    Pascalcase
+- camelCase (JS naming convention)
+- snake_case
+- Pascalcase
+- this-is-kebab-case
 
 ## What is TypeScript
 
-Static Typed, where JS is dynamic typed
-
-Designed by Microsoft
+TypeScript is a superset of JavaScript that adds static typing, while JavaScript is dynamically typed, developed and maintained by Microsoft.

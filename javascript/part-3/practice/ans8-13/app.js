@@ -7,7 +7,7 @@ console.log(arr.slice(0, n)); // [7, 9, 0]
 // Ans 9
 let arr2 = [7, 9, 0, -2];
 let n2 = 3;
-console.log(arr.slice(-n2));// [9, 0, -2] (-n2 means length - n2 = 4 - 3 = 1, so it starts from index 1)
+console.log(arr2.slice(-n2)); // [9, 0, -2] (-n2 means, length - n2 = 4 - 3 = 1, so it starts from index 1)
 
 
 // Ans 10

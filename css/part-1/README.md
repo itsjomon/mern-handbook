@@ -1,4 +1,5 @@
 #  CSS (Cascading Style Sheets)
+
 It is a language that is used to style HTML elements. It contains **properties** that define the style rules.
 
 ## Basic Format of CSS
@@ -17,31 +18,38 @@ To explore more CSS properties, check out the [MDN CSS Reference](https://develo
 
 ## How to Include Styles?
 
-- **Inline Style**: Writing style directly inline on each element
+### Inline Style
 
-  ```html
-     <h1 style="color:red;"> Hello World! </h1>
-  ```
+Writing style directly inline on each element
 
-- **Using style tag**: Style is added using the `<style>` element in the same documnet
+```html
+<h1 style="color:red;"> Hello World! </h1>
+```
 
-  ```html
-  <style>
-      h1 {
-          color:red;
-      }
-  </style>
-  ```
+### Using Style Tag
 
-- **External Style Sheet**: Writing CSS in a separate document & linking it with HTML file
+Style is added using the `<style>` element in the same documnet
 
-  ```html
-  <head>
-      <link rel="stylesheet" href="style.css">  <!-- Linking HTML with CSS File -->
-  </head>
-  ```
+```html
+<style>
+    h1 {
+        color:red;
+    }
+</style>
+```
 
-## Color Property
+### External Style Sheet
+
+Writing CSS in a separate document & linking it with HTML file
+
+```html
+<head>
+    <link rel="stylesheet" href="style.css">  <!-- Linking HTML with CSS File -->
+</head>
+```
+
+## color
+
 used to set the color of foreground
 
 ```css
@@ -49,7 +57,8 @@ color: purple;
 color: #ffffff;
 ```
 
-## Background Color Property
+## background-color
+
 used to set the color of background
 
 ```css
@@ -76,73 +85,80 @@ background-color: #ffffff;
  font-size
 ```
 
-- **text-align**
+### text-align
+
+```css
+text-align: left/start;
+text-align: right/end;
+text-align: center;
+text-align: justify;
+```
+
+### font-weight
+
+```css
+font-weight: normal; /* 400 */
+font-weight: bold;   /* 700 */
+font-weight: 100;
+font-weight: bolder;
+font-weight: lighter;
+
+/* 100 - 900 */
+```
+
+### text-decoration
+
+sets the appearance of decorative lines on text like underline
+
+```css
+text-decoration: underline;
+text-decoration: overline;
+text-decoration: line-through;
+```
+
+### line-height
+
+controls the height of the line of text
+
+```css
+line-height: normal;
+line-height: 2.5; /* 2.5*normal */
+```
+
+### letter-spacing
+
+controls the horizontal spacing behavior between text characters
+
+```css
+letter-spacing: normal;
+letter-spacing: 10px;
+```
+
+### Font-size units in CSS
+
+| Absolute | Relative       |
+|----------|----------------|
+| px       | %              |
+| pt       | em             |
+| pc       | rem            |
+| cm       | ch             |
+| mm       | vh             |
+| in       | vw + many more |
+
+- **Pixels (px)**
+
+  most commonly used absolute unit
+
+  96px = 1 inch
+
+  not suitable for responsive websites
+
   ```css
-  text-align: left/start;
-  text-align: right/end;
-  text-align: center;
-  text-align: justify;
+  font-size: 50px;
   ```
 
-- **font-weight**
-  ```css
-  font-weight: normal; /* 400 */
-  font-weight: bold;   /* 700 */
-  font-weight: 100;
-  font-weight: bolder;
-  font-weight: lighter;
+- **font-family**
 
-  /* 100 - 900 */
-  ```
-
-- **text-decoration** <br>
-  sets the appearance of decorative lines on text like underline
-
-  ```css
-  text-decoration: underline;
-  text-decoration: overline;
-  text-decoration: line-through;
-  ```
-
-- **line-height** <br>
-  controls the height of the line of text
-
-  ```css
-  line-height: normal;
-  line-height: 2.5; /* 2.5*normal */
-  ```
-
-- **letter-spacing** <br>
-  controls the horizontal spacing behavior between text characters
-
-  ```css
-  letter-spacing: normal;
-  letter-spacing: 10px;
-  ```
-
-- **Font-size units in CSS**
-
-  | Absolute | Relative |
-  |----------|----------|
-  | px       | %        |
-  | pt       | em       |
-  | pc       | rem      |
-  | cm       | ch       |
-  | mm       | vh       |
-  | in       | vw + many more |
-
-  - **Pixels (px)**
-
-    most commonly used absolute unit
-
-    96px = 1 inch
-
-    not suitable for responsive websites
-    ```css
-    font-size: 50px;
-    ```
-
-- **font-family** <br>
   specifies a prioritized list of one or more font family names
 
   ```css

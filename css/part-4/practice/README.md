@@ -1,4 +1,5 @@
 # Practice Questions 
+
 Complete the assignment according to the instructions in the CSS file.
 
 ```html
@@ -19,7 +20,6 @@ Complete the assignment according to the instructions in the CSS file.
     <div id="myPic">This is my Pic</div>
   </body>
 </html>
-
 ```
 
 ```css
@@ -66,5 +66,4 @@ Complete the assignment according to the instructions in the CSS file.
   height: 200px;
   background: pink;
 }
-
 ```
