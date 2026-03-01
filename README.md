@@ -28,6 +28,7 @@ This repository contains notes and code samples regarding the **MERN stack** tha
   - [Part 3](javascript/part-3)
   - [Part 4](javascript/part-4)
   - [Part 5](javascript/part-5)
+  - [Part 6](javascript/part-6)
 - [Terminal](terminal)
 - [Git and GitHub](git-and-github)
 
