@@ -1,15 +1,16 @@
 # MERN Handbook
 
-This repository contains notes and code samples regarding the **MERN stack** that I created while learning. It covers technologies like **HTML**, **CSS**, **JavaScript**, **React**, **Node.js**, **Express.js**, **MongoDB**, **MySQL**, **Tailwind CSS**, **Bootstrap**, and much more.
+A complete guide to full-stack web development with the MERN stack, covering everything from frontend essentials to backend architecture, databases, deployment, and beyond.
 
 ## Table of Contents
 
 > ✨ This section will continue to grow as more topics are added:
 
+## Table of Contents
+
 - [HTML](html)
-  - [Level 1](html/level-1/)
-    - [Part A](html/level-1/part-a)
-    - [Part B](html/level-1/part-b)
+  - [Level 1 / Part A](html/level-1/part-a)
+  - [Level 1 / Part B](html/level-1/part-b)
   - [Level 2](html/level-2)
   - [Level 3](html/level-3)
 - [CSS](css)
@@ -31,6 +32,12 @@ This repository contains notes and code samples regarding the **MERN stack** tha
   - [Part 6](javascript/part-6)
 - [Terminal](terminal)
 - [Git and GitHub](git-and-github)
+
+## Related Repositories
+
+- [30 days of JavaScript](https://github.com/itsjomon/30-days-of-javascript)
+- [SQL 50](https://github.com/itsjomon/sql-50)
+- [CS Fundamentals](https://github.com/itsjomon/cs-fundamentals)
 
 ## License
 
