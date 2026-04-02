@@ -32,6 +32,7 @@ A complete guide to full-stack web development with the MERN stack, covering eve
   - [Part 6](javascript/part-6)
   - [Mini Projects](javascript/mini-projects)
     - [Digital Clock](javascript/mini-projects/digital-clock)
+    - [Calculator](javascript/mini-projects/calculator)
 - [Terminal](terminal)
 - [Git and GitHub](git-and-github)
 
